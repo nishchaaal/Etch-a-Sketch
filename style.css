@@ -8,4 +8,24 @@
 
 body {
     font-family: 'Roboto' , sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.btn {
+    border: none;
+    padding: 0.8em 1.5em;
+    margin: 1.5em 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 2px solid #000;
 }
