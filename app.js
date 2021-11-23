@@ -37,10 +37,7 @@ const gridMaker = (numb) => {
 const enterNewSize = () => {
     let newValue = prompt('Enter the new size(1-99)');
     if(0 < newValue && newValue < 100) {
-        const box = document.querySelectorAll('.cube');
-        box.forEach((room) => {
-            main.removeChild(room);
-        })
+        main.innerHTML = '';
         gridMaker(newValue);
     } else {
         alert('Numbers only from 1 to 99');
